@@ -1,5 +1,7 @@
 /*
-*   Autor: João Paulo Back
+*   MIT License
+*   Copyright (c) 2020 João Paulo Back
+*
 */
 
 const { Router } = require('express');

@@ -1,7 +1,8 @@
 /*
-*   Autor: João Paulo Back
+*   MIT License
+*   Copyright (c) 2020 João Paulo Back
+*
 */
-
 
 const dotenv = require('dotenv');
 const express = require('express');
