@@ -26,5 +26,11 @@ Run the container with the following command. Use the -d flag to run in backgrou
 ```
 sudo docker run -d -p 8000:8080 order-app
 ```
+# Another Docker useful commands
 
+Kill all containers.
+
+```
+sudo docker kill $(sudo docker ps -q)
+```
 
