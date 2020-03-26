@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "export NODE_ENV=dev && nodemon src/server",
-    "prod": "export NODE_ENV=prod && node src/server"
+    "prod": "node src/server"
   },
   "dependencies": {
     "dotenv": "^8.2.0",

@@ -16,5 +16,11 @@ COPY . .
 # Port that is intended to be exposed.
 EXPOSE 8000
 
+# Set the NODE_ENV variable
+
+ENV NODE_ENV=dev
+
 # Provide the "yarn dev" command as default when runs the container
 CMD ["yarn", "dev"]
+
+# psql --username username --dbname myDataBase --echo-all --file myInsertFile

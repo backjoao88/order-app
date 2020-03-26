@@ -23,6 +23,8 @@ class App{
     initEnvironment(){
         switch(process.env.NODE_ENV){
             case "dev":
+                dotenv.config({path: './config/.env-dev'});
+            case "prod":
                 dotenv.config({path: './config/.env-prod'});
             default:
                 dotenv.config({path: './config/.env-dev'});
