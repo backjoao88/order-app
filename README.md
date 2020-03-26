@@ -15,17 +15,6 @@ Add current user to docker group (allow run docker without sudo command).
 sudo user mod -aG docker $USER;
 ```
 
-Instruction to install docker.
-
-```
-wget -qO- https://get.docker.com/ | sh
-```
-
-Add current user to docker group (allow run docker without sudo command).
-
-```
-sudo user mod -aG docker $USER;
-```
 # Run Postgres Container
 
 Build the image of Postgres container with the command below (the flag -t serves to define a title).
@@ -47,6 +36,25 @@ Run the container with the following command. Use the -d flag to run in backgrou
 
 ```
 sudo docker run -d -p 8000:8080 order-app-nodejs
+```
+# Running with docker-compose
+
+To build the images but not starting the containers, run the following command.
+
+```
+sudo docker-compose build
+```
+
+To run the containers in detached mode (-d flag) use the following command.
+
+```
+sudo docker-compose up -d
+```
+
+To run the containers but not building the images, run the following command.
+
+```
+sudo docker-compose up --no-build
 ```
 
 # Another Docker useful commands
