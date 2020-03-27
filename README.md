@@ -63,6 +63,8 @@ To run docker-compose file with a different name (docker-compose-dev.yaml exampl
 sudo docker-compose -f docker-compose-dev.yaml up -d
 ```
 
+# Executing commands to the container
+
 # Another Docker useful commands
 
 Kill all containers.
