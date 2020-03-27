@@ -1,6 +1,14 @@
 # Simple Order App
 Simple Order App API made with NodeJS.
 
+# Sequelize
+
+Instruction to install Sequelize Framework with yarn.
+
+```
+yarn add sequelize
+```
+
 # Docker
 
 Instruction to install docker.
