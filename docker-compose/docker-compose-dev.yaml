@@ -2,23 +2,30 @@ version: "2" # Versão do docker-compose
 services:
   db: # Informa o nome do serviço a ser criado
     build: # Informa que serão informados dados da construção
-      context: ./src/bd # Informa o contexto a ser criado
+      context: .././src/bd # Informa o contexto a ser criado
       dockerfile: Dockerfile # Informa onde está o arquivo Dockerfile da imagem
     container_name: container-postgres # Nome da instância da imagem a ser criada
     volumes: # Informa os volumes do Container
-      - ./src/bd/data:/var/lib/postgresql/data
+      - .././src/bd/data:/var/lib/postgresql/data
     environment: # Informa as variáveis de ambiente
-      POSTGRES_PASSWORD: docker # Informa a senha do banco
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: postgres
+      POSTGRES_USER: jpb123
+      POSTGRES_PASSWORD: docker
     ports: # Informa o mapeamento de porta
       - 5432:5432
   app: 
     build:
-      context: ./
+      context: .././
       dockerfile: Dockerfile
+    command: yarn dev
     container_name: container-nodejs
     volumes:
-      - ./:/home/node/app
+      - .././:/home/node/app
+    environment:
+      PORT: 8080
+      NODE_ENV: dev
     ports:
-      - 8000:8080
+      - 8080:8080
     depends_on:
       - db
