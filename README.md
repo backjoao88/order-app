@@ -63,9 +63,33 @@ To run docker-compose file with a different name (docker-compose-dev.yaml exampl
 sudo docker-compose -f docker-compose-dev.yaml up -d
 ```
 
-# Executing commands to the container
+# Executing commands
+
+Opening psql in postgres container.
+
+```
+sudo docker exec -it container-postgres psql -U postgres
+```
+
+Open the container's terminal with the following command.
+
+```
+sudo docker exec -it <container-name|id> /bin/bash
+```
 
 # Another Docker useful commands
+
+Return low-level information on Docker objects
+
+```
+sudo docker inspect <options> <container-name|id>
+```
+
+Stop a container.
+
+```
+sudo docker stop <container-name|id>
+```
 
 Kill all containers.
 
