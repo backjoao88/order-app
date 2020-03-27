@@ -57,6 +57,12 @@ To run the containers but not building the images, run the following command.
 sudo docker-compose up --no-build
 ```
 
+To run docker-compose file with a different name (docker-compose-dev.yaml example).
+
+```
+sudo docker-compose -f docker-compose-dev.yaml up -d
+```
+
 # Another Docker useful commands
 
 Kill all containers.
