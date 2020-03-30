@@ -4,9 +4,12 @@
 *
 */
 
+const Product = require('../models/Product')
+
 class ProductController{
     async index(req, res){
-        return res.json({ok:true})
+        const products = await Product.findAll();
+        return res.json(products)    
     }
 }
 

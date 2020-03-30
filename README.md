@@ -43,7 +43,7 @@ sudo docker build . -t order-app-nodejs
 Run the container with the following command. Use the -d flag to run in background and the -p to map the port.
 
 ```
-sudo docker run -d -p 8000:8080 order-app-nodejs
+sudo docker run -d -p 8080:8080 order-app-nodejs
 ```
 # Running with docker-compose
 

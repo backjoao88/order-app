@@ -14,7 +14,9 @@ class Product extends Model{
     static init(sequelize){
         super.init({
             description: Sequelize.STRING,
-        }, sequelize);
+        }, { sequelize });
+
+        return this;
     }
 }
 

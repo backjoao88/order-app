@@ -14,7 +14,7 @@ RUN yarn
 COPY . .
 
 # Port that is intended to be exposed.
-EXPOSE 8000
+EXPOSE 8080
 
 # Set the NODE_ENV variable
 # ENV NODE_ENV=dev
