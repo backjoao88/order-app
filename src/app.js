@@ -13,8 +13,8 @@ class App{
     constructor(){
         this.initServer();
         this.initEnvironment();
-        this.initRoutes();
         this.initMiddlewares();
+        this.initRoutes();
     }
     initServer(){
         this.server = express();

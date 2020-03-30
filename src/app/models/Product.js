@@ -14,6 +14,7 @@ class Product extends Model{
     static init(sequelize){
         super.init({
             description: Sequelize.STRING,
+            price: Sequelize.FLOAT,
         }, { sequelize });
 
         return this;
