@@ -95,6 +95,18 @@ To run docker-compose file with a different name (docker-compose-dev.yaml exampl
 sudo docker-compose -f docker-compose-dev.yaml up -d
 ```
 
+To stop all services in docker-compose-dev.
+
+```
+sudo docker-compose -f docker-compose-dev.yaml down
+```
+
+To show logs about the containers.
+
+```
+sudo docker-compose -f docker-compose-dev.yaml logs -f
+```
+
 # Executing commands
 
 Opening psql in postgres container.
@@ -110,6 +122,12 @@ sudo docker exec -it <container-name|id> /bin/bash
 ```
 
 # Another Docker useful commands
+
+Kill all containers.
+
+```
+sudo docker kill $(sudo docker ps -q)
+```
 
 Return low-level information on Docker objects
 
