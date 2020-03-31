@@ -9,6 +9,30 @@ Instruction to install Sequelize Framework with yarn.
 yarn add sequelize
 ```
 
+Instruction to install NPX.
+
+```
+npm install npx
+```
+
+To run all migrations on container app.
+
+```
+sudo docker exec -it <container-nodejs> npx sequelize db:migrate
+```
+
+To undo all migrations on container app.
+
+```
+sudo docker exec -it <container-name|id> npx sequelize db:migrate:undo
+```
+
+To create a migration file.
+
+```
+sudo docker exec -it <container-name|id> npx sequelize --name <migration-name>
+```
+
 # Docker
 
 Instruction to install docker.
