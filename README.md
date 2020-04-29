@@ -55,6 +55,9 @@ Add current user to docker group (allow run docker without sudo command).
 ```
 sudo user mod -aG docker $USER;
 ```
+```
+sudo chmod 666 /var/run/docker.sock
+```
 
 # Run Postgres Container
 
